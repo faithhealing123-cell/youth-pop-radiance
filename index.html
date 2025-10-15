@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Youth Pop Radiance v2.1 — Setup Guide</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+  <div class="max-w-3xl mx-auto py-12 px-4">
+    <h1 class="text-3xl font-bold mb-6 text-center">🚀 Youth Pop Radiance v2.1 — Interactive Setup Guide</h1>
+    <section class="mb-10">
+      <h2 class="text-2xl font-semibold mb-3">1️⃣ Install Requirements</h2>
+      <p>Make sure you have the following installed on your computer:</p>
+      <ul class="list-disc ml-6 mt-2">
+        <li><a href="https://nodejs.org" class="text-blue-600 underline">Node.js</a> (v18 or higher)</li>
+        <li>npm (comes with Node) or Yarn</li>
+        <li>A code editor like <a href="https://code.visualstudio.com" class="text-blue-600 underline">VS Code</a></li>
+      </ul>
+      <pre class="bg-gray-900 text-white p-3 mt-4 rounded-md text-sm overflow-x-auto"><code>node -v
+
+npm -v</code></pre>
+    </section>
+
+    <section class="mb-10">
+      <h2 class="text-2xl font-semibold mb-3">2️⃣ Unzip & Open Project</h2>
+      <ol class="list-decimal ml-6 mt-2">
+        <li>Unzip <strong>youth-pop-radiance-v2.1.zip</strong> anywhere (e.g., Desktop).</li>
+        <li>Open the unzipped folder in VS Code or your terminal.</li>
+        <li>Run this command to install dependencies:</li>
+      </ol>
+      <pre class="bg-gray-900 text-white p-3 mt-4 rounded-md text-sm overflow-x-auto"><code>npm install</code></pre>
+    </section>
+
+    <section class="mb-10">
+      <h2 class="text-2xl font-semibold mb-3">3️⃣ Start Development Server</h2>
+      <p>This launches your website locally so you can preview it:</p>
+      <pre class="bg-gray-900 text-white p-3 mt-4 rounded-md text-sm overflow-x-auto"><code>npm run dev</code></pre>
+      <p class="mt-3">After running, open the link shown in your terminal (usually <strong>http://localhost:5173</strong>).</p>
+      <p>Your <strong>Youth Pop Radiance</strong> site will appear — white-premium style with navigation, cart sidebar, and sample products.</p>
+    </section>
+
+    <section class="mb-10">
+      <h2 class="text-2xl font-semibold mb-3">4️⃣ Customize Content</h2>
+      <p>Edit these folders in <code>src/</code> to personalize your website:</p>
+      <ul class="list-disc ml-6 mt-2">
+        <li><code>src/components/</code> → Layout parts (Navbar, Footer, Hero, etc.)</li>
+        <li><code>src/data/products.json</code> → Add or edit your products</li>
+        <li><code>src/styles/globals.css</code> → Change background or typography</li>
+      </ul>
+      <p class="mt-3 text-gray-700">💡 Every time you save, Vite automatically refreshes your browser — no need to restart the server.</p>
+    </section>
+
+    <section class="mb-10">
+      <h2 class="text-2xl font-semibold mb-3">5️⃣ Build for Deployment</h2>
+      <p>When your site is ready to go live, create an optimized production build:</p>
+      <pre class="bg-gray-900 text-white p-3 mt-4 rounded-md text-sm overflow-x-auto"><code>npm run build</code></pre>
+      <p class="mt-3">This generates a <code>/dist</code> folder with everything you need to host your site.</p>
+    </section>
+
+    <section class="mb-10">
+      <h2 class="text-2xl font-semibold mb-3">6️⃣ Deploy Online</h2>
+      <p>Choose your favorite hosting option:</p>
+      <ul class="list-disc ml-6 mt-2">
+        <li><strong>Netlify:</strong> Drag and drop the <code>dist</code> folder onto <a href="https://app.netlify.com/drop" class="text-blue-600 underline">Netlify Drop</a>.</li>
+        <li><strong>Vercel:</strong> Install and deploy using:</li>
+      </ul>
+      <pre class="bg-gray-900 text-white p-3 mt-4 rounded-md text-sm overflow-x-auto"><code>npm install -g vercel
+
+vercel</code></pre>
+      <ul class="list-disc ml-6 mt-2">
+        <li><strong>GitHub Pages:</strong> Push your repo, enable Pages, and set source to <code>/dist</code>.</li>
+        <li><strong>Firebase Hosting:</strong></li>
+      </ul>
+      <pre class="bg-gray-900 text-white p-3 mt-4 rounded-md text-sm overflow-x-auto"><code>npm install -g firebase-tools
+firebase init hosting
+firebase deploy</code></pre>
+    </section>
+
+    <section class="mb-10">
+      <h2 class="text-2xl font-semibold mb-3">7️⃣ Next Enhancements</h2>
+      <ul class="list-disc ml-6 mt-2">
+        <li>Replace placeholder images in <code>src/assets/</code> with your product images.</li>
+        <li>Add payment gateway (Stripe, Razorpay, etc.) to checkout button.</li>
+        <li>Connect to a CMS (like Sanity or Strapi) for managing products dynamically.</li>
+        <li>Update <code>index.html</code> for favicon and meta tags.</li>
+      </ul>
+    </section>
+
+    <footer class="text-center text-gray-500 mt-10 text-sm">
+      <p>Made with ❤️ using React, Tailwind & Vite — Youth Pop Radiance v2.1</p>
+    </footer>
+  </div>
+</body>
+</html>
